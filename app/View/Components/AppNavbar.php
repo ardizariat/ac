@@ -23,6 +23,10 @@ class AppNavbar extends Component
      */
     public function render()
     {
-        return view('layouts.client.navbar');
+        $navmenu = [
+            'Beranda' => route('beranda'),
+            'Kontak' => route('kontak'),
+        ];
+        return view('layouts.client.navbar', compact('navmenu'));
     }
 }
