@@ -26,18 +26,11 @@
 
     {{ $slot }}
 
-
-    {{-- <a href="https://api.whatsapp.com/send?phone=6281388100247&amp;text= Saya ingin bertanya-tanya" target="_blank"
-        class="scroll-wa" id="scroll-wa">
-        <i class="bx bxl-whatsapp-square bx-md text-success"></i>
-    </a> --}}
     <a href="https://bit.ly/3LXjxfD" target="_blank">
         <button class="btn-floating wa">
             <img src="{{ asset('client/img/wa.png') }}" alt="wa">
-            <span>Tekan tombol untuk menghubungi admin</span>
         </button>
     </a>
-
 
     <!-- Start Footer -->
     <x-app-footer></x-app-footer>

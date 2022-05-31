@@ -12,27 +12,8 @@
 }
 
 .btn-floating:hover {
-    width: auto;
-    padding: 0 20px;
     cursor: pointer;
-}
-
-.btn-floating span {
-    font-size: 1px;
-    margin-left: 5px;
-    transition: 0.2s;
-    line-height: 0px;
-    display: none;
-}
-
-.btn-floating:hover span {
-    display: inline-block;
-    color: white;
-    font-size: 20px;
-}
-
-.btn-floating:hover img {
-    margin-bottom: -3px;
+    background-color: #34af23;
 }
 
 .btn-floating img {
