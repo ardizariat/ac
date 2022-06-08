@@ -28,6 +28,12 @@ class AppFooter extends Component
             'Kontak' => route('kontak'),
             'Layanan' => route('layanan'),
         ];
-        return view('layouts.client.footer', compact('navmenu'));
+
+        $services = [
+            'Sewa AC Standing',
+            'Sewa Misty Fan',
+            'Jasa Service AC'
+        ];
+        return view('layouts.client.footer', compact('navmenu', 'services'));
     }
 }

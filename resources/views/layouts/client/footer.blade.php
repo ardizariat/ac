@@ -12,19 +12,25 @@
                     sed do eiusmod tempor incididunt ut.
                 </p>
                 <ul class="list-inline footer-icons light-300">
-                    <li class="list-inline-item m-0">
+                    <li class="list-inline-item mr-1">
                         <a class="text-light" target="_blank" href="http://facebook.com/">
-                            <i class='bx bxl-facebook-square bx-md'></i>
+                            <i class="fa-brands fa-whatsapp fa-xl"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item m-0">
+                    <li class="list-inline-item mr-1">
                         <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
-                            <i class='bx bxl-whatsapp-square bx-md'></i>
+                            <i class="fa-brands fa-facebook fa-xl"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item m-0">
+                    <li class="list-inline-item mr-1">
                         <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
-                            <i class='bx bxl-instagram-square bx-md'></i>
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-1">
+                        <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                            <i class="fa-brands fa-youtube fa-xl"></i>
                         </a>
                     </li>
                 </ul>
@@ -46,30 +52,12 @@
             <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
                 <h2 class="h4 pb-lg-3 text-light light-300">Layanan Kami</h2>
                 <ul class="list-unstyled text-light light-300">
-                    <li class="pb-2">
-                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
-                            href="#">Branding</a>
-                    </li>
-                    <li class="pb-2">
-                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
-                            href="#">Business</a>
-                    </li>
-                    <li class="pb-2">
-                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
-                            href="#">Marketing</a>
-                    </li>
-                    <li class="pb-2">
-                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
-                            href="#">Social Media</a>
-                    </li>
-                    <li class="pb-2">
-                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
-                            href="#">Digital Solution</a>
-                    </li>
-                    <li class="pb-2">
-                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1"
-                            href="#">Graphic</a>
-                    </li>
+                    @foreach ($services as $item)
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="#">{{ $item }}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
 
@@ -78,12 +66,12 @@
                 <ul class="list-unstyled text-light light-300">
                     <li class="pb-2">
                         <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
-                            href="tel:010-020-0340">010-020-0340</a>
+                            href="https://bit.ly/3LXjxfD">+62-858-2412-1523</a>
                     </li>
-                    <li class="pb-2">
+                    {{-- <li class="pb-2">
                         <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
                             href="mailto:info@company.com">info@company.com</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
 
