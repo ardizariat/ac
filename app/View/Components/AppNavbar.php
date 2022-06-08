@@ -26,6 +26,7 @@ class AppNavbar extends Component
         $navmenu = [
             'Beranda' => route('beranda'),
             'Kontak' => route('kontak'),
+            'Layanan' => route('layanan'),
         ];
         return view('layouts.client.navbar', compact('navmenu'));
     }

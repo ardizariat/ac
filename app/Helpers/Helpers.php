@@ -7,3 +7,8 @@ function isActiveApp(string $url)
     }
     return '';
 }
+
+function prefixAPI()
+{
+    return 'http://ac.test/api/v1';
+}

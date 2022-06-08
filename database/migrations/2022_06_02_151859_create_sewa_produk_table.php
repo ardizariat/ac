@@ -14,15 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('sewa_produk', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('kategori_id')->nullable();
+            $table->uuid('id')->primary()->unique();
+            $table->uuid('kategori_id')->nullable();
             $table->string('nama');
-            $table->string('foto')->nullable();
-            $table->text('spesifikasi')->nullable();
-            $table->bigInteger('harian')->nullable();
-            $table->bigInteger('mingguan')->nullable();
-            $table->bigInteger('bulanan')->nullable();
-            $table->bigInteger('tahunan')->nullable();
+            $table->bigInteger('tarif_harian')->nullable();
+            $table->bigInteger('tarif_mingguan')->nullable();
+            $table->bigInteger('tarif_bulanan')->nullable();
+            $table->bigInteger('tarif_tahunan')->nullable();
             $table->timestamps();
 
             $table->foreign('kategori_id')->references('id')->on('kategori')

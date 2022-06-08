@@ -23,6 +23,11 @@ class AppFooter extends Component
      */
     public function render()
     {
-        return view('layouts.client.footer');
+        $navmenu = [
+            'Beranda' => route('beranda'),
+            'Kontak' => route('kontak'),
+            'Layanan' => route('layanan'),
+        ];
+        return view('layouts.client.footer', compact('navmenu'));
     }
 }
